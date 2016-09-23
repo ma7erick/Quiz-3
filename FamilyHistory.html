@@ -32,13 +32,13 @@
 
 
 
-
+<div id="wrapper">
 <div id="listDiv" ng-repeat="x in todoList">
     <input id="list" type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
     
 </div>
 
-<div id="wrapper">
+
     <button id="remove" ng-click="remove()">Remove marked</button>
 </div>
 
