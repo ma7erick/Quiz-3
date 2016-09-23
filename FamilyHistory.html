@@ -3,26 +3,46 @@
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <body ng-app="myApp" ng-controller="todoCtrl">
 
-<h2>My Family History</h2>
-
-<form>
-    <input type="text" ng-model="personInput" size="50" placeholder="Person">
-</form>
-<form ng-submit="todoAdd()">
-    <input type="text" ng-model="fatherInput" size="50" placeholder="Father">
-</form>
-<form ng-submit="todoAdd()">
-    <input type="text" ng-model="motherInput" size="50" placeholder="Mother">
-    <input type="submit" value="Add New">
-</form>
-
-<br>
-
-<div ng-repeat="x in todoList">
-    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
+<div id="banner">
+    <h2 id="title">My Family History</h2>
 </div>
 
-<p><button ng-click="remove()">Remove marked</button></p>
+
+<div id="inputDiv">
+
+<form  id="fatherForm" ng-submit="todoAdd()">
+    <input type="text" ng-model="motherInput" size="20" placeholder="Father">
+    <input id="submitButton" type="submit" value="Add New">
+</form>
+
+
+
+<form id="motherForm">
+    <input type="text" ng-model="fatherInput" size="20" placeholder="Mother">
+</form >
+
+
+<form id="personForm">
+    <input type="text" ng-model="personInput" size="20" placeholder="Person">
+</form>
+
+
+</div>
+
+
+
+
+
+<div id="listDiv" ng-repeat="x in todoList">
+    <input id="list" type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
+    
+</div>
+
+<div id="wrapper">
+    <button id="remove" ng-click="remove()">Remove marked</button>
+</div>
+
+
 
 <script>
 var app = angular.module('myApp', []);
@@ -45,5 +65,6 @@ app.controller('todoCtrl', function($scope) {
 </script>
 
 </body>
+<link rel="stylesheet" type="text/css" href="familyStyle.css" />
 </html>
 

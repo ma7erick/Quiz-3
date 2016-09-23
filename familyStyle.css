@@ -1,0 +1,106 @@
+body{
+	padding: 0; 
+	margin: 0;
+	background-color: #d9d9d9;;
+}
+
+
+#personForm{
+	
+	margin-right: 7px;
+}
+
+#motherForm{
+	float: right;
+	margin-right: 9px;
+}
+
+#fatherForm{
+	float: right;
+	margin-right: 9px;
+}
+
+#inputDiv{
+	width: 32%;
+	overflow: visible;
+	margin: auto;
+}
+
+#listDiv{
+	margin: auto;
+	width: 35%;
+	margin-top: 15px;
+	text-align:center;
+}
+
+#list{
+	margin: auto;
+	
+
+}
+
+#remove{
+	font-family: 'Roboto';
+	
+	margin: auto;
+	border-style: none;
+	background-color: #ff751a;
+	color: white;
+	size: 40px;
+	top: 30px;
+}
+
+#submitButton{
+	font-family: 'Roboto';
+	background-color: #ff751a;
+	border-style: none;
+	color: white;
+
+}
+
+#banner{
+	width: 100%;
+	background-color: #476b6b; 
+	top: 0;
+	left: 0;
+	overflow: visible;
+	margin-bottom: 35px;
+    text-align:center;
+
+}
+
+#title{
+	color: white;
+	margin: auto;
+	vertical-align: middle;
+	font-family: 'simple';
+	font-size: 100px
+}
+
+#wrapper{
+ width: 20%
+ margin: auto;
+ margin-top: 50px;
+ text-align: center;
+}
+
+
+@font-face {
+         font-family: 'Retro'; 
+         src: url('WRESTLEMANIA.ttf'); 
+         } 
+
+         @font-face {
+         font-family: 'simple'; 
+         src: url('Simpleness.otf'); 
+         } 
+
+@font-face {
+font-family: 'Roboto'; 
+src: url('Roboto-Medium.ttf'); 
+} 
+
+@font-face {
+font-family: 'hunter'; 
+src: url('Hunter Heart - Free Font.ttf'); 
+} 
